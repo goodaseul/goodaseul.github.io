@@ -1,0 +1,281 @@
+/*
+Last Updated: 2022/02
+*/
+* {
+    box-sizing: border-box;
+    ::selection {
+        background-color: $point;
+        color: #fff;
+    }
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    // cursor: none;
+    // color: $black-color;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.5;
+    font-style: normal;
+    font-family: "Pretendard", sans-serif;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+main {
+    display: block;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+b,
+strong {
+    font-weight: 800;
+    font-family: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    padding: 0 5px;
+    background-color: $point;
+    color: #fff;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+address {
+    font-style: initial;
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+    // outline: 0;
+}
+
+button {
+    cursor: pointer;
+    &:focus {
+        outline-offset: -3px;
+        outline: 1px dashed #0a1e5a;
+    }
+}
+
+em {
+    font-style: normal;
+}
+
+.btn {
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+    text-align: center;
+    color: inherit;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-indent: -9999%;
+    overflow: hidden;
+}
+
+#skipNav {
+    position: absolute;
+    width: 100%;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        width: 100%;
+        height: 50px;
+        background: #000;
+        // color: $white-color;
+
+        &:focus,
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
