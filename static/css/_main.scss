@@ -234,8 +234,10 @@ main {
                             .word {
                                 display: block;
                                 transition: 0.5s;
-                                &:last-of-type {
-                                    text-align: right;
+                                &.pc_cont {
+                                    &:nth-of-type(2) {
+                                        text-align: right;
+                                    }
                                 }
                                 &.mo_cont {
                                     display: none;
@@ -707,8 +709,11 @@ main {
                 }
             }
             &_about {
-                padding: rem(300px) 0;
+                padding: rem(300px) 0 0;
                 .marquee {
+                    &_top {
+                        top: 50%;
+                    }
                     &_bottom {
                         bottom: -3%;
                     }
@@ -717,13 +722,13 @@ main {
                     }
                 }
                 .inner {
-                    padding-bottom: 45%;
+                    padding-bottom: rem(1000px);
                     .wrap_introduce {
                         width: 100%;
                         padding: 0;
                     }
                     .wrap_about {
-                        margin-top: 30%;
+                        margin-top: rem(700px);
                         .tab {
                             li {
                                 padding-left: rem(30px);

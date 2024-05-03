@@ -1192,7 +1192,7 @@ main .section_work .inner .wrap_tit > div .section_tit .word {
   transition: 0.5s;
 }
 
-main .section_work .inner .wrap_tit > div .section_tit .word:last-of-type {
+main .section_work .inner .wrap_tit > div .section_tit .word.pc_cont:nth-of-type(2) {
   text-align: right;
 }
 
@@ -1601,7 +1601,10 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
     --width: 100px;
   }
   main .section_about {
-    padding: 6.25rem 0;
+    padding: 6.25rem 0 0;
+  }
+  main .section_about .marquee_top {
+    top: 50%;
   }
   main .section_about .marquee_bottom {
     bottom: -3%;
@@ -1610,14 +1613,14 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
     font-size: 3.75rem;
   }
   main .section_about .inner {
-    padding-bottom: 45%;
+    padding-bottom: 20.833rem;
   }
   main .section_about .inner .wrap_introduce {
     width: 100%;
     padding: 0;
   }
   main .section_about .inner .wrap_about {
-    margin-top: 30%;
+    margin-top: 14.583rem;
   }
   main .section_about .inner .wrap_about .tab li {
     padding-left: 0.625rem;
