@@ -10,7 +10,7 @@ window.onload = function () {
             document.querySelector("body").style.overflowY = "hidden";
             document.getElementById("popuplayer").style.display = "block";
             content.innerHTML = `
-            <img src="/static/images/pr/pr_img_${index + 1}.png" alt="">
+            <img src="../images/pr/pr_img_${index + 1}.png" alt="">
             `;
             document.getElementById("popuplayer").append(content);
         });
