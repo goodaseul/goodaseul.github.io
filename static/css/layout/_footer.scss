@@ -79,7 +79,7 @@ $quickSize: 60px;
     &.fix {
         position: absolute;
         bottom: auto;
-        margin-top: -($quickSize / 2);
+        margin-top: (-$quickSize / 2);
     }
 }
 .footer {
@@ -222,6 +222,35 @@ $quickSize: 60px;
             }
             .copyrights {
                 margin-top: rem(120px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        padding: rem(250px) 0;
+        .inner {
+            .info {
+                dl {
+                    font-size: rem(52px);
+                    div {
+                        + div {
+                            margin-top: rem(50px);
+                        }
+                        dd {
+                            .wrap_arrow {
+                                right: -0.5rem;
+                                top: 50%;
+                                width: rem(15px);
+                                overflow: visible;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyrights {
+                margin-top: rem(150px);
             }
         }
     }

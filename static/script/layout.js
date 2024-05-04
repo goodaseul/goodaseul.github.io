@@ -135,12 +135,12 @@ function maruqueeAnimate() {
     count1++;
     count2++;
     count1 = marqueeText(count1, pTag1, -1);
-    count1 = marqueeText(count2, pTag2, 1);
+    count2 = marqueeText(count2, pTag2, 1);
     window.requestAnimationFrame(maruqueeAnimate);
 }
 
 function scrollHandler() {
-    count1 -= 5;
+    count1 += 5;
     count2 += 5;
 }
 
@@ -157,9 +157,9 @@ function workTargetScroll(target) {
         const pos = window.scrollY;
         let currentPer = Math.floor(((pos - targetSection.offsetTop) / (targetSection.clientHeight - window.innerHeight)) * 100);
         if (pos >= targetSection.offsetTop) {
-            targetSection.querySelector(".section_tit").style.setProperty("--_p", `${currentPer}%`);
+            targetSection.querySelector(".section_tit > p").style.setProperty("--_p", `${currentPer}%`);
         } else {
-            targetSection.querySelector(".section_tit").style.setProperty("--_p", "0%");
+            targetSection.querySelector(".section_tit  > p").style.setProperty("--_p", "0%");
         }
     });
 }
@@ -213,12 +213,12 @@ function currentPer(target) {
     window.addEventListener("scroll", function (e) {
         let result, valuePer;
         if (target == "web") {
-            targetTit = document.querySelector(`.l_main .section_${target} .section_tit`);
+            targetTit = document.querySelector(`.l_main .section_${target} .section_tit > p`);
             valuePer = getComputedStyle(targetTit).getPropertyValue("--_p");
             const value = valuePer.replace("%", "");
             result = value > 100 ? targetTit.style.setProperty("--_p", "100%") : false;
         } else if (target == "promotion") {
-            targetTit = document.querySelector(`.l_main .section_${target} .section_tit`);
+            targetTit = document.querySelector(`.l_main .section_${target} .section_tit  > p`);
             valuePer = getComputedStyle(targetTit).getPropertyValue("--_p");
             const value = valuePer.replace("%", "");
             result = value > 100 ? targetTit.style.setProperty("--_p", "100%") : false;

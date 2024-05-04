@@ -100,7 +100,7 @@
         }
     }
     .logo {
-        left: -50px;
+        left: -70px;
     }
 }
 //테블릿 ~ 해상도 1080px ~
@@ -122,6 +122,7 @@
         }
     }
     .logo {
+        left: rem(-190px);
         a {
             padding: 0 rem(40px);
         }
