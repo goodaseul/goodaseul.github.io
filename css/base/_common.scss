@@ -1,0 +1,226 @@
+//공통
+html {
+    font-size: 18px;
+}
+body {
+    font-size: 18px;
+    background: #fff;
+    &.yellow_in {
+        header {
+            background: $point;
+            .inner {
+                .gnb {
+                    li {
+                        a {
+                            color: #000;
+                            .roundball {
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            .txt {
+                color: #000;
+                &.txt_af {
+                    background-color: $point;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &.white_in {
+        header {
+            background: #fff;
+            .inner {
+                .gnb {
+                    li {
+                        a {
+                            color: #000;
+                            .roundball {
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            .txt {
+                color: #000;
+                &.txt_af {
+                    background-color: $point;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.inner {
+    width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+// 화살표
+.wrap_arrow {
+    overflow: hidden;
+    position: relative;
+    top: -0.8rem;
+    right: -0.8rem;
+
+    i {
+        transition: all 0.3s;
+        transform-style: preserve-3d;
+        transform: translate3d(-100%, 100%, 0px) scale3d(1, 1, 1) skew(-90deg);
+    }
+}
+main {
+    section {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+}
+// hover effect
+.hover_effect {
+    position: relative;
+    overflow: hidden;
+    .txt {
+        z-index: 1;
+        text-transform: uppercase;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all 0.5s;
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        color: $point;
+        &_af {
+            transform: translate3d(300px, 0%, 0px);
+            position: absolute;
+            top: 0%;
+            bottom: auto;
+            left: 0%;
+            right: 0%;
+            color: #fff;
+        }
+    }
+}
+.big_tit {
+    font-size: 120px;
+    line-height: 1;
+    font-weight: 800;
+}
+.tit {
+    font-size: 32px;
+    font-weight: bold;
+}
+.mid_tit {
+    font-size: 28px;
+    font-weight: bold;
+}
+.sub_tit {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    margin-right: 10px;
+    &_notion {
+        width: 36px;
+        height: 36px;
+        background-image: url(#{$url-images}logos/logo_notion.png);
+    }
+}
+.black {
+    filter: invert(0%) sepia(0) saturate(10%) hue-rotate(170deg) brightness(0%) contrast(100%);
+}
+//pc hover
+@media screen and (min-width: 1480px) {
+    // hover effect
+    .hover_effect {
+        &:hover {
+            .txt {
+                transform: translate3d(-300%, 0%, 0);
+                &_af {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+@function rem($size) {
+    @return floor($size / 16px * 1rem / 3 * 1000) / 1000;
+}
+
+@media screen and (max-width: 1480px) {
+    .inner {
+        width: 100%;
+        padding: 0 40px;
+    }
+    .big_tit {
+        font-size: 100px;
+    }
+    .tit {
+        font-size: 28px;
+    }
+    .mid_tit {
+        font-size: 24px;
+    }
+    .sub_tit {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    body {
+        font-size: rem(44px);
+    }
+    .inner {
+        padding: 0 rem(80px);
+    }
+    .big_tit {
+        font-size: rem(100px);
+    }
+    .tit {
+        font-size: rem(64px);
+    }
+    .mid_tit {
+        font-size: rem(56px);
+    }
+    .sub_tit {
+        font-size: rem(48px);
+    }
+
+    .icon {
+        margin-right: rem(30px);
+        &_notion {
+            width: rem(80px);
+            height: rem(80px);
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    html {
+        font-size: 14px;
+    }
+}
