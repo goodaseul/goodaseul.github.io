@@ -18,7 +18,6 @@ main {
             }
         }
         &_intro {
-            // height: 52vw;
             background: $bg;
             z-index: 3;
             .inner {
@@ -144,7 +143,7 @@ main {
                                 color: $point;
                                 &::before {
                                     opacity: 1;
-                                    background-color: #fff;
+                                    background-color: $point;
                                 }
                             }
                         }
@@ -301,12 +300,13 @@ main {
                             .date {
                                 position: absolute;
                                 z-index: 1;
-                                right: 5%;
-                                bottom: 5%;
+                                right: 8%;
+                                bottom: 10%;
                                 font-size: 14px;
                             }
                             &::before,
                             &::after {
+                                pointer-events: none;
                                 content: "";
                                 position: absolute;
                             }
@@ -331,9 +331,10 @@ main {
                                 width: 50%;
                                 position: absolute;
                                 right: -5%;
-                                bottom: 20%;
+                                bottom: 23%;
                                 transition: all 0.3s;
                                 z-index: 2;
+                                text-align: right;
                             }
                             .wrap_btn {
                                 display: flex;
@@ -400,6 +401,9 @@ main {
                                 }
                                 &::after {
                                     transform: scale(3, 4);
+                                }
+                                .wrap_img {
+                                    right: 8%;
                                 }
                                 .link_btn {
                                     &::before {
@@ -470,9 +474,6 @@ main {
                                 &.active {
                                     .link_btn {
                                         color: #fff;
-                                    }
-                                    .wrap_img {
-                                        right: 5%;
                                     }
                                 }
                             }
@@ -647,7 +648,7 @@ main {
                         .wrap_list {
                             .list {
                                 width: 100%;
-                                padding: 10% 5% 12%;
+                                padding: 10% 5%;
                                 + .list {
                                     margin-top: 15%;
                                 }
@@ -670,6 +671,17 @@ main {
                                     }
                                     &.no_link {
                                         font-size: 14px;
+                                    }
+                                }
+                                &.active {
+                                    .wrap_img {
+                                        width: 40%;
+                                        right: 5%;
+                                        bottom: 30%;
+                                    }
+                                    .date {
+                                        right: 5%;
+                                        bottom: 17%;
                                     }
                                 }
                             }
@@ -846,11 +858,9 @@ main {
                                 }
                                 h3 {
                                     .mid_tit {
-                                        // font-size: rem(75px);
                                         font-size: rem(60px);
                                         margin-bottom: rem(30px);
                                         &::before {
-                                            // left: -3.5%;
                                             left: -6%;
                                             top: rem(30px);
                                             width: rem(15px);
@@ -859,17 +869,11 @@ main {
                                     }
                                     .info {
                                         display: block;
-                                        // padding-bottom: rem(100px);
-                                        // font-size: rem(52px);
                                         padding-bottom: rem(50px);
                                         font-size: rem(44px);
                                     }
                                 }
-                                // .wrap_img {
-                                //     width: 40%;
-                                // }
                                 .date {
-                                    // font-size: rem(40px);
                                     font-size: rem(36px);
                                 }
                                 .wrap_btn {
@@ -896,6 +900,12 @@ main {
                                 &.active {
                                     &::after {
                                         transform: scale(4, 4);
+                                    }
+                                    .wrap_img {
+                                        right: 13%;
+                                    }
+                                    .date {
+                                        right: 13%;
                                     }
                                 }
                             }
@@ -1005,6 +1015,16 @@ main {
                                 }
                                 .date {
                                     font-size: rem(40px);
+                                }
+
+                                &.active {
+                                    .wrap_img {
+                                        right: 6%;
+                                    }
+                                    .date {
+                                        right: 6%;
+                                        bottom: 10%;
+                                    }
                                 }
                             }
                         }

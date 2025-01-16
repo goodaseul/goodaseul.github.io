@@ -1048,7 +1048,7 @@ main .section_about .inner .wrap_about .tab li.active {
 }
 main .section_about .inner .wrap_about .tab li.active::before {
   opacity: 1;
-  background-color: #fff;
+  background-color: #ffd02f;
 }
 main .section_about .inner .wrap_about .tit {
   font-size: 40px;
@@ -1196,11 +1196,12 @@ main .section_work .inner .wrap_work .wrap_list .list h3 .info {
 main .section_work .inner .wrap_work .wrap_list .list .date {
   position: absolute;
   z-index: 1;
-  right: 5%;
-  bottom: 5%;
+  right: 8%;
+  bottom: 10%;
   font-size: 14px;
 }
 main .section_work .inner .wrap_work .wrap_list .list::before, main .section_work .inner .wrap_work .wrap_list .list::after {
+  pointer-events: none;
   content: "";
   position: absolute;
 }
@@ -1225,9 +1226,10 @@ main .section_work .inner .wrap_work .wrap_list .list .wrap_img {
   width: 50%;
   position: absolute;
   right: -5%;
-  bottom: 20%;
+  bottom: 23%;
   transition: all 0.3s;
   z-index: 2;
+  text-align: right;
 }
 main .section_work .inner .wrap_work .wrap_list .list .wrap_btn {
   display: flex;
@@ -1291,6 +1293,9 @@ main .section_work .inner .wrap_work .wrap_list .list.active h3 .mid_tit::before
 main .section_work .inner .wrap_work .wrap_list .list.active::after {
   transform: scale(3, 4);
 }
+main .section_work .inner .wrap_work .wrap_list .list.active .wrap_img {
+  right: 8%;
+}
 main .section_work .inner .wrap_work .wrap_list .list.active .link_btn::before {
   height: 100%;
 }
@@ -1342,9 +1347,6 @@ main .section_work.section_web .inner .wrap_work .wrap_list .list .link_btn::bef
 }
 main .section_work.section_web .inner .wrap_work .wrap_list .list.active .link_btn {
   color: #fff;
-}
-main .section_work.section_web .inner .wrap_work .wrap_list .list.active .wrap_img {
-  right: 5%;
 }
 main .section_work.section_promotion {
   background: #fff;
@@ -1446,7 +1448,7 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
   }
   main .section_work .inner .wrap_work .wrap_list .list {
     width: 100%;
-    padding: 10% 5% 12%;
+    padding: 10% 5%;
   }
   main .section_work .inner .wrap_work .wrap_list .list + .list {
     margin-top: 15%;
@@ -1465,6 +1467,15 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
   }
   main .section_work .inner .wrap_work .wrap_list .list .link_btn.no_link {
     font-size: 14px;
+  }
+  main .section_work .inner .wrap_work .wrap_list .list.active .wrap_img {
+    width: 40%;
+    right: 5%;
+    bottom: 30%;
+  }
+  main .section_work .inner .wrap_work .wrap_list .list.active .date {
+    right: 5%;
+    bottom: 17%;
   }
   main .section_work.section_web .inner .wrap_tit {
     width: 50%;
@@ -1647,6 +1658,12 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
   main .section_work .inner .wrap_work .wrap_list .list.active::after {
     transform: scale(4, 4);
   }
+  main .section_work .inner .wrap_work .wrap_list .list.active .wrap_img {
+    right: 13%;
+  }
+  main .section_work .inner .wrap_work .wrap_list .list.active .date {
+    right: 13%;
+  }
   main .section_work.section_web::before {
     border-radius: 1.25rem;
   }
@@ -1720,6 +1737,13 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
   }
   main .section_work .inner .wrap_work .wrap_list .list .date {
     font-size: 0.833rem;
+  }
+  main .section_work .inner .wrap_work .wrap_list .list.active .wrap_img {
+    right: 6%;
+  }
+  main .section_work .inner .wrap_work .wrap_list .list.active .date {
+    right: 6%;
+    bottom: 10%;
   }
   main .section_work.section_web::before {
     border-radius: 1.25rem;
