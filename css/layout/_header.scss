@@ -61,7 +61,7 @@
     bottom: 10%;
     color: $point;
     transform: rotate(90deg);
-    a {
+    p {
         letter-spacing: 0.1em;
         font-weight: bold;
         padding: 0 5px;
@@ -124,7 +124,7 @@
     }
     .logo {
         left: rem(-190px);
-        a {
+        p {
             padding: 0 rem(40px);
         }
     }

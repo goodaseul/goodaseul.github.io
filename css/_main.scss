@@ -47,6 +47,9 @@ main {
                         &.active {
                             opacity: 1;
                         }
+                        &:nth-of-type(2) {
+                            top: 25%;
+                        }
                     }
                 }
                 .wrap_obj {
@@ -80,7 +83,7 @@ main {
                 display: flex;
                 pointer-events: none;
                 &_top {
-                    top: 50%;
+                    top: 46%;
                     transform: translateY(-50%);
                 }
                 &_bottom {
@@ -103,8 +106,8 @@ main {
                 color: #fff;
                 .wrap_introduce {
                     transition: all 0.3s;
-                    width: 80%;
-                    padding: 100px 50px 390px;
+                    width: 72%;
+                    padding: 100px 50px 460px;
                     .tit {
                         margin-bottom: 10%;
                     }
@@ -119,6 +122,7 @@ main {
                         flex-wrap: wrap;
                         justify-content: flex-end;
                         margin-bottom: 5%;
+                        padding-right: 3%;
                         li {
                             padding: 0 2%;
                             font-size: 24px;
@@ -137,9 +141,10 @@ main {
                             }
                             &.active {
                                 font-weight: bold;
+                                color: $point;
                                 &::before {
                                     opacity: 1;
-                                    background-color: $point;
+                                    background-color: #fff;
                                 }
                             }
                         }
@@ -147,6 +152,7 @@ main {
                     .tit {
                         font-size: 40px;
                         margin-bottom: 20px;
+                        padding-right: 3%;
                         .status {
                             font-size: inherit;
                             color: $point;
@@ -257,7 +263,7 @@ main {
                         .list {
                             width: 48%;
                             height: fit-content;
-                            padding: 6% 8% 6% 6%;
+                            padding: 6% 8% 11% 6%;
                             border-radius: 16px;
                             box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.12);
                             position: relative;
@@ -296,7 +302,7 @@ main {
                                 position: absolute;
                                 z-index: 1;
                                 right: 5%;
-                                bottom: 2%;
+                                bottom: 5%;
                                 font-size: 14px;
                             }
                             &::before,
@@ -594,7 +600,7 @@ main {
                 }
                 .inner {
                     .wrap_introduce {
-                        width: 90%;
+                        width: 80%;
                         padding: 150px 0 400px 50px;
                     }
                     .wrap_about {
@@ -641,7 +647,7 @@ main {
                         .wrap_list {
                             .list {
                                 width: 100%;
-                                padding: 10% 5%;
+                                padding: 10% 5% 12%;
                                 + .list {
                                     margin-top: 15%;
                                 }
@@ -720,6 +726,9 @@ main {
             &_about {
                 padding: rem(300px) 0 0;
                 .marquee {
+                    &_top {
+                        top: 50%;
+                    }
                     &_bottom {
                         bottom: -3%;
                     }
@@ -731,10 +740,12 @@ main {
                     .wrap_introduce {
                         width: 100%;
                         padding: 0;
-                        padding-bottom: rem(400px);
+                        padding-bottom: rem(600px);
                     }
                     .wrap_about {
+                        padding-bottom: 10%;
                         .tab {
+                            padding-right: 0;
                             li {
                                 padding-left: rem(30px);
                                 font-size: rem(48px);
@@ -742,6 +753,7 @@ main {
                             }
                         }
                         .tit {
+                            padding-right: 0;
                             font-size: rem(60px);
                             margin-bottom: rem(30px);
                             .status {

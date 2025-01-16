@@ -60,10 +60,11 @@ $quickSize: 60px;
         left: auto;
         transform: none;
         > * {
-            background: $point;
-            border-color: $point;
+            background: #fff;
+            border-color: #fff;
             .icon {
                 transform: rotate(180deg);
+                filter: brightness(0);
             }
         }
         .btn_top {
