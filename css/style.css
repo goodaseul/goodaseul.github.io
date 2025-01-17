@@ -1223,7 +1223,7 @@ main .section_work .inner .wrap_work .wrap_list .list::after {
   box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.12);
 }
 main .section_work .inner .wrap_work .wrap_list .list .wrap_img {
-  width: 50%;
+  width: 80%;
   position: absolute;
   right: -5%;
   bottom: 23%;
@@ -1469,7 +1469,6 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
     font-size: 14px;
   }
   main .section_work .inner .wrap_work .wrap_list .list.active .wrap_img {
-    width: 40%;
     right: 5%;
     bottom: 30%;
   }
@@ -1731,9 +1730,6 @@ main .section_work.section_promotion .inner .wrap_work .wrap_list .list.active .
   main .section_work .inner .wrap_work .wrap_list .list h3 .info {
     padding-bottom: 2.083rem;
     font-size: 1.083rem;
-  }
-  main .section_work .inner .wrap_work .wrap_list .list .wrap_img {
-    width: 40%;
   }
   main .section_work .inner .wrap_work .wrap_list .list .date {
     font-size: 0.833rem;

@@ -328,7 +328,7 @@ main {
                                 box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.12);
                             }
                             .wrap_img {
-                                width: 50%;
+                                width: 80%;
                                 position: absolute;
                                 right: -5%;
                                 bottom: 23%;
@@ -675,7 +675,6 @@ main {
                                 }
                                 &.active {
                                     .wrap_img {
-                                        width: 40%;
                                         right: 5%;
                                         bottom: 30%;
                                     }
@@ -1009,9 +1008,6 @@ main {
                                         padding-bottom: rem(100px);
                                         font-size: rem(52px);
                                     }
-                                }
-                                .wrap_img {
-                                    width: 40%;
                                 }
                                 .date {
                                     font-size: rem(40px);
